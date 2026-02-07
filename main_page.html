@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Виртуальный музей Церкви Святого Духа</title>
+
+  <!-- Human‑readable, plain CSS (no frameworks) -->
+  <style>
+    :root {
+      --bg: #fafafa;
+      --text: #222;
+      --muted: #666;
+      --accent: #8b2c2c;
+      --border: #e0e0e0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: var(--text);
+      background-color: var(--bg);
+      line-height: 1.6;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      background: white;
+    }
+    .top-nav {
+      background: #3B302A;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text);
+    }
+    .languages {
+      display: flex;
+      gap: 0.75rem;
+      font-size: 0.85rem;
+    }
+    .languages a {
+      text-decoration: none;
+      color: var(--muted);
+    }
+    .hero {
+      max-width: 900px;
+      margin: 4rem auto;
+      padding: 0 1.5rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+    main {
+      max-width: 900px;
+      margin: 3rem auto 5rem;
+      padding: 0 1.5rem;
+    }
+    .section {
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .section:last-child {
+      border-bottom: none;
+    }
+    .section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+    .section p {
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+    .read-more {
+      display: inline-block;
+      font-size: 0.9rem;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    footer {
+      background: white;
+      border-top: 1px solid var(--border);
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="top-nav">
+      <nav class="nav-links">
+        <a href="#">Экспозиция</a>
+        <a href="#">Интервью</a>
+        <a href="#">Видеоэкскурсия</a>
+        <a href="#">Публикации</a>
+      </nav>
+
+      <div class="languages">
+        <a href="#">ENG</a>
+        <a href="#">LIT</a>
+        <a href="#">RUS</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Виртуальный музей<br>Церкви Святого Духа</h1>
+    <p>
+      Церковь Святого Духа — не только важнейший памятник литовского православия,
+      но и европейской культуры в целом. Стены Вильнюсского храма помнят сопротивление
+      Брестской унии, мировые войны, служение будущего патриарха Тихона и многое другое.
+    </p>
+  </section>
+
+  <main>
+
+    <article class="section">
+      <h2>Истоки православия в Литве</h2>
+      <p>
+        Есть весомые основания полагать, что именно православие было первой христианской
+        конфессией, закрепившейся на землях Литвы. Тесные контакты с западнорусскими
+        княжествами в XI–XII веках оказали огромное влияние на культуру региона...
+      </p>
+      <a class="read-more" href="#">подробнее</a>
+    </article>
+
+    <article class="section">
+      <h2>Лица прихода</h2>
+      <p>
+        Культура — это прежде всего люди. Именно ярким личностям, связанным с приходом,
+        Церковь Святого Духа обязана своим значением. Речь идёт не только о
+        священнослужителях, но и о мирянах...
+      </p>
+      <a class="read-more" href="#">подробнее</a>
+    </article>
+
+    <article class="section">
+      <h2>Наши дни</h2>
+      <p>
+        Сегодня Церковь Святого Духа является главным символом литовского православия.
+        И хотя кафедральным собором считается Пречистенский собор, именно этот храм
+        хранит память о самых драматичных страницах истории церкви...
+      </p>
+      <a class="read-more" href="#">подробнее</a>
+    </article>
+
+    <article class="section">
+      <h2>Архитектурные особенности</h2>
+      <p>
+        Церковь Святого Духа является значимым памятником виленского барокко,
+        распространённого в ВКЛ XVII–XVIII веков. Первоначально храм был деревянным,
+        и лишь в 1634 году был перестроен в камне...
+      </p>
+      <a class="read-more" href="#">подробнее</a>
+    </article>
+
+    <article class="section">
+      <h2>Храм в водовороте истории (1597–1990)</h2>
+      <p>
+        Кафоликон Свято-Духова монастыря моложе многих православных приходов Вильнюса,
+        однако именно он стал первым православным храмом, возведённым после унии...
+      </p>
+      <a class="read-more" href="#">подробнее</a>
+    </article>
+
+  </main>
+
+  <footer>
+    © Виртуальный музей Церкви Святого Духа
+  </footer>
+
+</body>
+</html>
